@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <a class="logo" href="index.html">Barbershop "Borodibski"</a>
+      <nav class="main-nav">
+        <a class="main-nav__link" href="#">Информация</a>
+        <a class="main-nav__link" href="#">Новости</a>
+        <a class="main-nav__link" href="#">Прайс-лист</a>
+        <a class="main-nav__link  main-nav__link--active">Магазин</a>
+        <a class="main-nav__link" href="#">Контакты</a>
+      </nav>
+      <div class="user-block">
+        <a class="user-block__login" href="#">Войти</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <h1 class="main-content__title">Средства для ухода</h1>
+
+      <section class="breadcrumbs">
+        <h2 class="visually__hidden">Навигация по сайту</h2>
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <a class="breadcrumbs__link" href="#">Магазин</a>
+        <a class="breadcrumbs__link">Средства для ухода</a>
+      </section>
+
+      <section class="filter">
+        <h2 class="visually__hidden">Фильтр товаров</h2>
+        <form class="filter__form" method="get" action="#">
+
+          <fieldset class="filter__brands">
+            <legend class="filter__title">
+              Производители:
+            </legend>
+            <input type="checkbox" name="check-brand" value="baxter" id="check1" checked>
+            <label class="filter__checkbox" for="check1">Baxter of California</label>
+
+            <input type="checkbox" name="check-brand" value="mr-natty" id="check2">
+            <label class="filter__checkbox" for="check2">Mr Natty</label>
+
+            <input type="checkbox" name="check-brand" value="suavecito" id="check3" checked>
+            <label class="filter__checkbox" for="check3">Suavecito</label>
+
+            <input type="checkbox" name="check-brand" value="malin-goetz" id="check4">
+            <label class="filter__checkbox" for="check4">Malin+Goetz</label>
+
+            <input type="checkbox" name="check-brand" value="murray" id="check5">
+            <label class="filter__checkbox" for="check5">Murray's</label>
+
+            <input type="checkbox" name="check-brand" value="american-crew" id="check6" checked>
+            <label class="filter__checkbox" for="check6">American crew</label>
+          </fieldset>
+
+          <fieldset class="filter__type">
+            <legend class="filter__title">
+              Группы товаров:
+            </legend>
+
+            <input type="radio" name="radio-check" value="shaving" id="radio1" checked>
+            <label class="filter__radio" for="radio1">Бритвенные принадлежности</label>
+
+            <input type="radio" name="radio-check" value="сare-products" id="radio2">
+            <label class="filter__radio" for="radio2">Средства для ухода</label>
+
+            <input type="radio" name="radio-check" value="accessories" id="radio3">
+            <label class="filter__radio" for="radio3">Аксессуары</label>
+
+          </fieldset>
+
+          <button class="button" type="submit">Показать</button>
+
+        </form>
+      </section>
+
+      <div class="catalog">
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="#">
+              Набор для путешествий
+              <span class="product-card__name">&laquo;Baxter of&nbsp;California&raquo;</span>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/" width="" height="" alt="Набор для путешествий «Baxter of California»">
+          </a>
+          <p class="product-card__price">
+            2 900 &#8381;
+            <a class="button" href="#">Купить</a>
+          </p>
+        </article>
+      </div>
+
+    <section class="pagination">
+
+      <a class="pagination__page" href="#">1</a>
+      <a class="pagination__page  pagination__page--active">2</a>
+      <a class="pagination__page" href="#">3</a>
+      <a class="pagination__page" href="#">4</a>
+
+    </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__contacts">
+          Барбершоп &laquo;Бородинский&raquo;<br>
+          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная,<br>
+          д. 19/8<br>
+          <a class="page-footer__link" href="#">
+            Как нас найти?
+          </a>
+      </p>
+
+      <section class="socials">
+        <h3 class="socials__title">Давайте дружить!</h3>
+        <a class="socials__link  socials__link--vk" href="#">ВКонтакте</a>
+        <a class="socials__link  socials__link--fb" href="#">Facebook</a>
+        <a class="socials__link  socials__link--youtube" href="#">Youtube</a>
+      </section>
+
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="button" href="https://htmlacademy.ru">HTML-Academy</a>
+      </p>
+    </footer>
+
+
+  </body>
+</html>
