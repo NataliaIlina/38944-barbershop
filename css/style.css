@@ -391,7 +391,7 @@ template {
   display: none;
 }
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
   color: #fff;
   background-color: #000;
 }
