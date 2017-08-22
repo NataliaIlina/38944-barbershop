@@ -391,7 +391,233 @@ template {
   display: none;
 }
 body {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000 url("../img/main-bg.png") no-repeat center top;
+}
+.inner-page {
+  color: #000;
+  background: #f8f5f2 url("../img/inner-bg.png") repeat;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.button {
+  display: inline-block;
+  font: inherit;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000;
+  border: none;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+.button--copyright:hover,
+.button--copyright:focus,
+.button--copyright:active {
+  color: #000;
+  background-color: #fff;
+}
+.main-header {
+  font-size: 16px;
+  line-height: 20px;
   color: #fff;
   background-color: #000;
+}
+.main-nav__link {
+  color: #fff;
+}
+.main-nav__link:hover,
+.main-nav__link:focus {
+  background-color: #242424;
+}
+.user-block__login {
+  color: white;
+}
+.user-block__login:hover,
+.user-block__login:focus {
+  background-color: #242424;
+}
+.main-content__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+.promo {
+  text-align: center;
+}
+.promo__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+.info-block {
+  color: #000;
+  background: #f8f5f2 url("../img/inner-bg.png") repeat;
+}
+.info-block__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+.info-block__date {
+  text-transform: none;
+}
+.info-block__link {
+  color: #000;
+}
+.feedback__input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+.feedback__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feedback__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feedback__input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feedback__input:focus {
+  border-color: #663d15;
+}
+.page-footer {
+  color: #fff;
+  background: #232323 url("../img/footer-bg.png") repeat;
+}
+.page-footer__link {
+  color: #fff;
+}
+.page-footer__link--address {
+  text-decoration: underline;
+}
+.breadcrumbs__link {
+  color: #aba9a7;
+}
+.breadcrumbs__link[href] {
+  color: #000;
+}
+.filter {
+  line-height: 18px;
+}
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.filter__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.product-card__title {
+  font-size: 14px;
+  line-height: 18px;
+}
+.product-card__link {
+  color: #000;
+  text-transform: none;
+}
+.product-card__name {
+  text-transform: uppercase;
+}
+.product-card__price {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.pagination {
+  font-size: 14px;
+  line-height: 18px;
+}
+.pagination__page {
+  color: #fff;
+  background-color: #000;
+}
+.pagination__page:hover,
+.pagination__page:focus,
+.pagination__page:active,
+.pagination__page--active {
+  color: #000;
+  background-color: #fff;
+}
+.product__code {
+  color: #aeaeae;
+}
+.product__price {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.product__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.product__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.shop__slogan {
+  font-size: 48px;
+  line-height: 48px;
+}
+.shop__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.shop__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.modal-map {
+  background: #fff url("../img/map.jpg") no-repeat center;
+}
+.modal-login {
+  color: #000;
+  background: #f8f5f2 url("../img/inner-bg.png") repeat;
+}
+.modal-login__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.modal-login__input {
+  font: inherit;
+  text-transform: uppercase;
+  color: #000;
+  border: 2px solid #000;
+}
+.modal-login__input::-webkit-input-placeholder {
+  color: #000;
+}
+.modal-login__input:-ms-input-placeholder {
+  color: #000;
+}
+.modal-login__input::placeholder {
+  color: #000;
+}
+.modal-login__input:focus {
+  border-color: #663d15;
+}
+.modal-login__link {
+  color: #000;
 }
