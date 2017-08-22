@@ -1,0 +1,25 @@
+.button{
+  display: inline-block;
+  font: inherit;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: @black;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: @brown;
+  }
+
+  &--copyright{
+
+    &:hover,
+    &:focus,
+    &:active{
+      color: @black;
+      background-color: @white;
+    }
+  }
+}

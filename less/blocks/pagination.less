@@ -1,0 +1,17 @@
+.pagination{
+  font-size: @font-size-text;
+  line-height: @line-height-inner;
+}
+
+.pagination__page{
+  color: @white;
+  background-color: @black;
+// тут можно так?) или модификатор лучше отдельно?
+  &:hover,
+  &:focus,
+  &:active,
+  &--active{
+    color: @black;
+    background-color: @white;
+  }
+}
