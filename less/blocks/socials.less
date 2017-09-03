@@ -1,14 +1,38 @@
 .socials{
+  min-width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: auto;
+}
 
+.socials__title{
+  width: 100%;
+  margin-left: 18px;
+  font-size: @font-size-text;
+  line-height: @line-height-text;
 }
 
 .socials__link{
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  display: flex;
+  width: 43px;
+  height: 43px;
   background-color: @black;
+  margin-right: 5px;
+  margin-bottom: 5px;
 
-  &:hover{
+  &:hover,
+  &:focus,
+  &:active{
     background-color: @white;
+
+    & .socials__icon{
+      fill: @black;
+    }
   }
+}
+
+.socials__icon{
+  margin: auto;
+  fill: @white;
 }

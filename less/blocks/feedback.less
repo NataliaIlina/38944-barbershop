@@ -1,8 +1,28 @@
 .feedback{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.feedback__block{
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__label{
+  display: block;
+  padding-left: 18px;
+  margin-bottom: 8px;
 }
 
 .feedback__input{
+  display: block;
+  box-sizing: border-box;
+  width: 140px;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  padding-left: 16px;
   font: inherit;
   background-color: transparent;
   border: 2px solid @black;

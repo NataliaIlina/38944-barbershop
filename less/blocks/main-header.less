@@ -1,6 +1,18 @@
 .main-header{
+  margin-bottom: 60px;
   font-size: @font-size-link;
   line-height: @line-height-link;
   color: @white;
   background-color: @black;
+
+  &--inner-page{
+    margin-bottom: 50px;
+  }
+}
+
+.main-header__inner{
+  .inner();
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }

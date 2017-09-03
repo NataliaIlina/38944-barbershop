@@ -1,12 +1,38 @@
 .main-nav{
-
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 620px;
+  margin-right: auto;
 }
 
 .main-nav__link{
+  position: relative;
+  display: block;
+  padding: 26px 20px;
   color: @white;
 
   &:hover,
-  &:focus{
+  &:focus,
+  &:active{
     background-color: @gray-dark;
   }
+
+  &--active{
+
+    &::after{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    content: "";
+    height: 5px;
+    background-color: @white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: transparent;
+  }
+}
 }

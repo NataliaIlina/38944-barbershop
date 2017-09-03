@@ -1,9 +1,24 @@
 .breadcrumbs{
-
+  display: flex;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs__link{
+  position: relative;
   color: @gray;
+  padding-right: 40px;
+
+  &:not(:last-of-type)::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    background-color: @black;
+    transform: rotate(45deg);
+  }
 }
 
 .breadcrumbs__link[href]{
