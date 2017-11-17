@@ -1,5 +1,6 @@
 .filter{
   line-height: @line-height-inner;
+  width: 200px;
 
   & fieldset{
     padding: 0;
@@ -7,16 +8,150 @@
     border: none;
   }
 
-  & input[type="checkbox"]:focus + label{
-    outline: 2px solid red;
+  & input[type="checkbox"]:focus + label,
+    input[type="radio"]:focus + label{
+    color: @brown;
+  }
+
+  & input[type="checkbox"]:disabled + label,
+    input[type="radio"]:disabled + label{
+    color: @black-30;
+  }
+
+  & input[type="checkbox"]:focus + label::before{
+    border-color: @brown;
+  }
+  & input[type="checkbox"]:disabled + label::before,
+    input[type="radio"]:disabled + label::before{
+    border-color: @black-30;
+  }
+
+  & input[type="checkbox"]:focus + label .filter__icon{
+    fill: @brown;
+  }
+
+  & input[type="checkbox"]:disabled + label .filter__icon{
+    fill: @black-30;
+  }
+
+  & input[type="radio"]:disabled + label::after{
+    background-color: @black-30;
+  }
+
+  & #check1:checked + label > .filter__icon,
+    #check2:checked + label > .filter__icon,
+    #check3:checked + label > .filter__icon,
+    #check4:checked + label > .filter__icon,
+    #check5:checked + label > .filter__icon,
+    #check6:checked + label > .filter__icon{
+    display: block;
+  }
+
+  & #radio1:checked + label::after,
+    #radio2:checked + label::after,
+    #radio3:checked + label::after{
+    display: block;
   }
 }
 
 .filter__title{
   font-size: @font-size-h2;
   line-height: @line-height-h2;
+  margin-bottom: 30px;
+}
+
+.filter__brands{
+  min-height: 313px;
 }
 
 .filter__checkbox{
+  position: relative;
+  display: block;
+  margin-bottom: 19px;
+  padding-left: 42px;
+  cursor: pointer;
 
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 2px solid @black;
+  }
+
+  &:hover,
+  &:active{
+    color: @brown;
+  }
+
+  &:hover::before,
+  &:active::before{
+    border-color: @brown;
+  }
+
+  &:hover .filter__icon,
+  &:active .filter__icon{
+    fill: @brown;
+  }
+}
+
+.filter__icon{
+  position: absolute;
+  display: none;
+  left: 3px;
+  top: 3px;
+}
+
+.filter__type{
+  min-height: 220px;
+}
+
+.filter__radio{
+  position: relative;
+  display: block;
+  margin-bottom: 19px;
+  padding-left: 42px;
+  cursor: pointer;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 2px solid @black;
+    border-radius: 50%;
+  }
+
+  &::after{
+    content: "";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: @black;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:active{
+    color: @brown;
+  }
+
+  &:hover::before,
+  &:active::before{
+    border-color: @brown;
+  }
+
+  &:hover::after,
+  &:active::after{
+    background-color: @brown;
+  }
 }
