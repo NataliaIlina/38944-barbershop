@@ -15,7 +15,7 @@
       </symbol>
     </svg>
 
-    <header class="main-header  main-header--inner-page">
+    <header class="main-header    main-header--inner-page">
       <div class="main-header__inner">
       <a class="logo logo--inner" href="index.html">
         <img src="img/logo.svg" width="111" height="24" alt="Barbershop Borodinski">
@@ -43,6 +43,7 @@
         <a class="breadcrumbs__link">Средства для ухода</a>
       </section>
 
+ <div class="main-content__inner">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form" method="get" action="#">
@@ -51,25 +52,48 @@
             <legend class="filter__title">
               Производители:
             </legend>
-            <input type="checkbox" name="check-brand" value="baxter" id="check1" checked>
-            <label class="filter__checkbox" for="check1">Baxter of California</label>
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="baxter" id="check1" checked>
+            <label class="filter__checkbox" for="check1">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>
+              Baxter of California
+            </label>
 
-            <input type="checkbox" name="check-brand" value="mr-natty" id="check2">
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="mr-natty" id="check2">
             <label class="filter__checkbox" for="check2">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>
               Mr Natty
             </label>
 
-            <input type="checkbox" name="check-brand" value="suavecito" id="check3" checked>
-            <label class="filter__checkbox" for="check3">Suavecito</label>
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="suavecito" id="check3" checked>
+            <label class="filter__checkbox" for="check3">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>Suavecito</label>
 
-            <input type="checkbox" name="check-brand" value="malin-goetz" id="check4">
-            <label class="filter__checkbox" for="check4" tabindex="0">Malin+Goetz</label>
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="malin-goetz" id="check4">
+            <label class="filter__checkbox" for="check4">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>
+              Malin+Goetz</label>
 
-            <input type="checkbox" name="check-brand" value="murray" id="check5">
-            <label class="filter__checkbox" for="check5">Murray's</label>
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="murray" id="check5" disabled>
+            <label class="filter__checkbox" for="check5">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>
+              Murray's</label>
 
-            <input type="checkbox" name="check-brand" value="american-crew" id="check6" checked>
-            <label class="filter__checkbox" for="check6">American crew</label>
+            <input class="visually-hidden" type="checkbox" name="check-brand" value="american-crew" id="check6" checked>
+            <label class="filter__checkbox" for="check6">
+              <svg class="filter__icon" width="12" height="12">
+                  <use xlink:href="#cross"></use>
+              </svg>
+              American crew</label>
           </fieldset>
 
           <fieldset class="filter__type">
@@ -77,18 +101,19 @@
               Группы товаров:
             </legend>
 
-            <input type="radio" name="radio-check" value="shaving" id="radio1" checked>
-            <label class="filter__radio" for="radio1">Бритвенные принадлежности</label>
+            <input class="visually-hidden" type="radio" name="radio-check" value="shaving" id="radio1">
+            <label class="filter__radio" for="radio1">
+              Бритвенные принадлежности</label>
 
-            <input type="radio" name="radio-check" value="сare-products" id="radio2">
+            <input class="visually-hidden" type="radio" name="radio-check" value="сare-products" id="radio2" checked>
             <label class="filter__radio" for="radio2">Средства для ухода</label>
 
-            <input type="radio" name="radio-check" value="accessories" id="radio3">
+            <input class="visually-hidden" type="radio" name="radio-check" value="accessories" id="radio3" disabled>
             <label class="filter__radio" for="radio3">Аксессуары</label>
 
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button  button--filter" type="submit">Показать</button>
 
         </form>
       </section>
@@ -98,27 +123,109 @@
           <h2 class="product-card__title">
             <a class="product-card__link" href="catalog-item.html">
               Набор для путешествий
-              <span class="product-card__name">&laquo;Baxter of&nbsp;California&raquo;</span>
+              <p class="product-card__name">&laquo;Baxter of&nbsp;California&raquo;</p>
             </a>
           </h2>
           <a class="product-card__link" href="#">
             <img class="product-card__image" src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
           </a>
           <p class="product-card__price">
-            2 900 &#8381;
-            <a class="button" href="#">Купить</a>
+            <span>2 900 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
           </p>
         </article>
+
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="catalog-item.html">
+              Увлажняющий кондиционер
+              <p class="product-card__name">&laquo;Baxter of&nbsp;California&raquo;</p>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/product-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
+          </a>
+          <p class="product-card__price">
+            <span>750 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="catalog-item.html">
+              Гель для волос
+              <p class="product-card__name">&laquo;Suavecito&raquo;</p>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
+          </a>
+          <p class="product-card__price">
+            <span>300 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="catalog-item.html">
+              Глина для укладки волос
+              <p class="product-card__name">&laquo;American crew&raquo;</p>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/product-4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
+          </a>
+          <p class="product-card__price">
+            <span>500 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="catalog-item.html">
+              Гель для волос
+              <p class="product-card__name">&laquo;American crew&raquo;</p>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/product-5.jpg" width="220" height="165" alt="Гель для волос «American crew»">
+          </a>
+          <p class="product-card__price">
+            <span>300 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
+          </p>
+        </article>
+
+        <article class="product-card">
+          <h2 class="product-card__title">
+            <a class="product-card__link" href="catalog-item.html">
+              Набор для бритья
+              <p class="product-card__name">&laquo;Baxter of&nbsp;California&raquo;</p>
+            </a>
+          </h2>
+          <a class="product-card__link" href="#">
+            <img class="product-card__image" src="img/product-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
+          </a>
+          <p class="product-card__price">
+            <span>3 900 &#8381;</span>
+            <a class="button  button--price" href="#">Купить</a>
+          </p>
+        </article>
+
+       <section class="pagination">
+
+         <a class="pagination__page" href="#">1</a>
+         <a class="pagination__page      pagination__page--active">2</a>
+         <a class="pagination__page" href="#">3</a>
+         <a class="pagination__page" href="#">4</a>
+
+       </section>
       </div>
+  </div>
 
-    <section class="pagination">
-
-      <a class="pagination__page" href="#">1</a>
-      <a class="pagination__page  pagination__page--active">2</a>
-      <a class="pagination__page" href="#">3</a>
-      <a class="pagination__page" href="#">4</a>
-
-    </section>
 
     </main>
 
@@ -165,5 +272,38 @@
      </div>
     </footer>
 
+    <article class="modal-login">
+      <h2 class="modal-login__title">Личный кабинет</h2>
+      <p class="modal-login__description">
+        Введите пожалуйста свой логин и пароль
+      </p>
+      <form class="modal-login__form" method="get" action="#">
+
+        <label class="modal-login__label  modal-login__label--name">
+          <input class="modal-login__input" name="name" type="text" placeholder="логин">
+        </label>
+
+        <label class="modal-login__label  modal-login__label--pass">
+          <input class="modal-login__input" name="password" type="password" placeholder="пароль">
+        </label>
+
+        <input class="visually-hidden" type="checkbox" name="remember" value="remember" id="remember-check">
+        <label for="remember-check" class="modal-login__label  modal-login__label--check">
+          <svg class="modal-login__icon" width="12" height="12">
+              <use xlink:href="#cross"></use>
+          </svg>
+          Запомните меня
+        </label>
+
+        <a class="modal-login__link" href="#">Я забыл пароль!</a>
+
+        <button class="button  button--modal" type="submit">Войти</button>
+      </form>
+      <button class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </article>
+
+  <script src="js/modal.js"></script>
   </body>
 </html>
