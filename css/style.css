@@ -391,6 +391,7 @@ template {
   display: none;
 }
 body {
+  min-width: 960px;
   padding: 0;
   margin: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -439,9 +440,6 @@ a {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-}
-* {
-  outline: 1px solid blue;
 }
 .visually-hidden {
   position: absolute;
@@ -1161,15 +1159,93 @@ a {
   width: 100%;
   font-size: 48px;
   line-height: 48px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 65px;
+}
+.shop__slogan::before,
+.shop__slogan::after {
+  content: "";
+  height: 2px;
+  background-color: #000;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+.shop__slogan b {
+  display: block;
+  margin: 0 25px;
 }
 .shop__title {
+  margin: 0;
+  margin-bottom: 25px;
+  width: 240px;
   font-size: 24px;
   line-height: 30px;
+}
+.shop__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+.shop__best {
+  width: 51%;
+  margin-bottom: 42px;
 }
 .shop__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.shop__item {
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+.shop__item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+}
+.shop__price {
+  width: 49%;
+}
+.shop__table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.shop__cell {
+  border: 2px solid #000;
+  padding: 8px 0;
+  padding-left: 17px;
+  width: 50%;
+}
+.shop__cell:nth-of-type(2) {
+  padding-left: 0;
+  text-align: center;
+}
+.shop__description {
+  margin: 0;
+  width: 380px;
+  margin-bottom: 78px;
+}
+.shop__description:first-child {
+  margin-right: 100px;
 }
 .modal-map {
   position: fixed;
